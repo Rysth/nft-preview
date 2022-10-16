@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --primary-soft-blue: hsl(215, 51%, 70%);
+  --primary-cyan: hsl(178, 100%, 50%);
+
+  --neutral-dark-blue-main: hsl(217, 54%, 11%);
+  --neutral-dark-blue-card: hsl(216, 50%, 16%);
+  --neutral-dark-blue-line: hsl(215, 32%, 27%);
+  --neutral-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+*::before,
+html {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+  background-color: var(--neutral-dark-blue-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#card{
+  background-color: var(--neutral-dark-blue-card);
+  max-width: 17rem;
+  padding: 1.05rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 30px 15px rgb(0, 0, 0, 0.1);
+}
+
+#card #card-image{
+  border-radius: 10px;
+  height: 14rem;
+  width: 100%;
+  background-image: url("../images/image-equilibrium.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#card-image img{
+  opacity: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-cyan);
+  border-radius: 10px;
+  padding: 6rem;
+  transition: .15s;
+}
+
+#card-image img:hover{
+  opacity: .85;
+}
+
+#card-content h1{
+  color: var(--neutral-white);
+  font-weight: 400;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+  transition: .15s;
+}
+
+#card-content h1:hover{
+  color: var(--primary-cyan);
+  cursor: pointer;
+}
+
+#card-content p{
+  color: var(--primary-soft-blue);
+  font-weight: 300;
+  font-size: .9rem;
+}
+
+#card-content #sub-content{
+  display: flex;
+  vertical-align: middle;
+  justify-content: space-between;
+}
+
+#sub-content img, #sub-content p{
+  display: inline;
+  vertical-align: middle;
+}
+
+#sub-content div{
+  flex: 1;
+}
+
+#sub-content div:first-child{
+  text-align: left;
+}
+
+#sub-content div:last-child{
+  text-align: right;
+}
+
+#sub-content div:first-child img{
+  width: 8%;
+  margin-right: .1rem;
+}
+
+#sub-content div:first-child p{
+  font-weight: 600;
+  color: var(--primary-cyan);
+}
+
+#sub-content div:last-child img{
+  width: 12%;
+}
+
+#sub-content div:last-child p{
+  font-weight: 400;
+  font-size: .8rem;
+}
+
+#card-content #line{
+  width: 100%;
+  height: 1px;
+  border-radius: 1px;
+  margin-block: 1rem;
+  background-color: var(--neutral-dark-blue-line);
+}
+
+#card-author img{
+  display: inline;
+  width: 11%;
+  border: 1px solid var(--neutral-white);
+  border-radius: 100%;
+  vertical-align: middle;
+  margin-right: .5rem;
+}
+
+#card-author p, #card-author span{
+  font-size: .8rem !important;
+  font-weight: 300;
+}
+
+#card-author p{
+  display: inline;
+  color: var(--primary-soft-blue);
+}
+
+#card-author p span{
+  color: var(--neutral-white);
+  transition: .15s;
+}
+
+#card-author p span:hover{
+  color: var(--primary-cyan);
+  cursor: pointer;
+}
