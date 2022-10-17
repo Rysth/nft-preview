@@ -14,28 +14,37 @@
 
 <body>
   <main>
-    <div id="card">
-      <div id="card-image">
-        <img src="images/icon-view.svg" alt="icon-view-hover">
+    <div class="card">
+      <div class="card-image">
+        <a target="_blank" href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U">
+          <img src="images/icon-view.svg" alt="icon-view-hover">
+          <img src="images/image-equilibrium.jpg" alt="nft-preview-image">
+        </a>
       </div>
-      <div id="card-content">
-        <h1>Equilibrium #3429</h1>
+      <div class="card-content">
+        <h1>
+          <a target="_blank"
+            href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub/nft-card-preview-using-htmlcss-4sJn6C-iaj/solutions">Equilibrium
+            #3429</a>
+        </h1>
         <p>Our Equilibrium collection promotes balance and calm.</p>
-        <div id="sub-content">
+        <div class="sub-content">
+          <!-- ICONS NEED TO BE WITHOUT ALT TAG -->
           <div>
-            <img src="images/icon-ethereum.svg" alt="ethereum-icon">
+            <img src="images/icon-ethereum.svg" aria-hidden=“true”>
             <p>0.041 ETH</p>
           </div>
           <div>
-            <img src="images/icon-clock.svg" alt="icon-clock-days">
+            <img src="images/icon-clock.svg" aria-hidden=“true”>
             <p>3 days left</p>
           </div>
         </div>
-        <div id="line"></div>
+        <div class="line"></div>
       </div>
-      <div id="card-author">
+      <div class="card-author">
         <img src="images/image-avatar.png" alt="nft-author">
-        <p>Creation of <span>Jules Wyvern</span></p>
+        <p>Creation of <a target="_blank" href="https://www.frontendmentor.io/profile/Rysth">Jules
+            Wyvern</a></p>
       </div>
     </div>
   </main>
